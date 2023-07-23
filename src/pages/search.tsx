@@ -1,9 +1,9 @@
-import { ReactComponent as ChevronDownIcon } from "../assets/icons/chevron-down.svg";
-import { Navbar } from "../components/Navbar";
-import { Product } from "../features/product/Product";
-import { ReactComponent as SlidersIcon } from "../assets/icons/sliders.svg";
-import { Topbar } from "../components/Topbar";
-import { PrimaryButton } from "../components/button";
+import { ReactComponent as ChevronDownIcon } from "@/assets/icons/chevron-down.svg";
+import { Navbar } from "@/components/Navbar";
+import { PrimaryButton } from "@/components/button";
+import { Product } from "@/features/product/Product";
+import { ReactComponent as SlidersIcon } from "@/assets/icons/sliders.svg";
+import { Topbar } from "@/components/Topbar";
 
 export const SearchPage = () => {
   return (

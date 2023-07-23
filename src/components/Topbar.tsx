@@ -1,5 +1,5 @@
-import { ReactComponent as ChevronDownIcon } from "../assets/icons/chevron-down.svg";
-import { ReactComponent as PhoneIcon } from "../assets/icons/phone.svg";
+import { ReactComponent as ChevronDownIcon } from "@/assets/icons/chevron-down.svg";
+import { ReactComponent as PhoneIcon } from "@/assets/icons/phone.svg";
 
 export const Topbar = () => {
   return (

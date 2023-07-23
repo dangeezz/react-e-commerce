@@ -1,7 +1,7 @@
-import { ReactComponent as ChevronDownIcon } from "../assets/icons/chevron-down.svg";
-import { ReactComponent as SearchIcon } from "../assets/icons/search.svg";
-import { ReactComponent as ShoppingCartIcon } from "../assets/icons/shopping-cart.svg";
-import { ReactComponent as UserIcon } from "../assets/icons/user.svg";
+import { ReactComponent as ChevronDownIcon } from "@/assets/icons/chevron-down.svg";
+import { ReactComponent as SearchIcon } from "@/assets/icons/search.svg";
+import { ReactComponent as ShoppingCartIcon } from "@/assets/icons/shopping-cart.svg";
+import { ReactComponent as UserIcon } from "@/assets/icons/user.svg";
 
 export const Navbar = () => {
   return (

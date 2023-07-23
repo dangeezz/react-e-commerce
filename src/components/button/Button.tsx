@@ -1,17 +1,16 @@
-import {  ButtonHTMLAttributes,  MouseEvent, PropsWithChildren } from "react";
+import { ButtonHTMLAttributes, MouseEvent, PropsWithChildren } from "react";
 
 type ButtonProps = {
-    onClick?: (evt: MouseEvent<HTMLButtonElement>) => void;
-}
+  onClick?: (evt: MouseEvent<HTMLButtonElement>) => void;
+};
 
-export const Button = ({
-    onClick,
-    children,
-    ...attrs
- }: ButtonHTMLAttributes<HTMLButtonElement> & PropsWithChildren<ButtonProps>) => {
-    return (
-        <button {...attrs } onClick={onClick}>
-            { children }
-        </button>
-    )
-}
+type ButtonAttrs =  ButtonHTMLAttributes<HTMLButtonElement>;
+type Props = ButtonAttrs & PropsWithChildren<ButtonProps>;
+
+export const Button = ({ onClick, children, ...attrs }: Props) => {
+  return (
+    <button {...attrs} onClick={onClick}>
+      {children}
+    </button>
+  );
+};

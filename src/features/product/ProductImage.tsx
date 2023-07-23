@@ -1,3 +1,3 @@
 export const ProductImage = () => {
-    return <div className="bg-gray-200 rounded-lg aspect-square"></div>;
+  return <div className="bg-gray-200 rounded-lg aspect-square"></div>;
 };

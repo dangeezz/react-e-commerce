@@ -1,12 +1,12 @@
-import { Navbar } from "../components/Navbar";
-import { InputNumberButton } from "../components/InputNumberButton";
-import { Color } from "../features/Color";
-import { Breadcrumb } from "../features/Breadcrumb";
-import { ProductImage, Rating } from "../features/product/";
-import { PrimaryButton, SecondaryButton } from "../components/button/";
+import { PrimaryButton, SecondaryButton } from "@/components/button/";
+import { ProductImage, Rating } from "@/features/product/";
 
-import { ReactComponent as ArchiveIcon } from '../assets/icons/archive.svg';
-import { ReactComponent as TruckIcon } from '../assets/icons/truck.svg';
+import { ReactComponent as ArchiveIcon } from '@/assets/icons/archive.svg';
+import { Breadcrumb } from "@/features/breadcrumb/";
+import { Color } from "@/features/color/";
+import { InputNumberButton } from "@/components/InputNumberButton";
+import { Navbar } from "@/components/Navbar";
+import { ReactComponent as TruckIcon } from '@/assets/icons/truck.svg';
 
 export const ProductPage = () => {
   return (
@@ -18,7 +18,7 @@ export const ProductPage = () => {
           <Breadcrumb />
         </div>
 
-        <section className="mt-10">
+        <section className="py-10">
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="pr-6">
               <ProductImage />

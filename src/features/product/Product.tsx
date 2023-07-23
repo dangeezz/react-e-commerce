@@ -1,11 +1,22 @@
-import { ReactComponent as HeartIcon } from "../../assets/icons/heart.svg";
-import { Button, SecondaryButton } from "../../components/button";
+import { Button, SecondaryButton } from "@/components/button";
+
+import { ReactComponent as HeartIcon } from "@/assets/icons/heart.svg";
+import { ProductImage } from "./ProductImage";
 import { Rating } from "./Rating";
+
+const FavouriteButton = () => {
+  return (
+    <Button className="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow">
+      <HeartIcon className="w-5 h-5" />
+    </Button>
+  )
+}
 
 export const Product = () => {
   return (
     <div className="relative leading-loose">
-      <div className="bg-gray-200 rounded-lg aspect-square"></div>
+      <ProductImage />
+
       <div className="flex items-center justify-between mt-2 font-semibold">
         <span className="">Wireless Earbuds, IPX8</span>
         <span className="">
@@ -22,12 +33,10 @@ export const Product = () => {
       <SecondaryButton className="p-1 px-6">Add to Cart</SecondaryButton>
 
       <div className="absolute top-4 right-4">
-        <Button className="flex items-center justify-center w-10 h-10 bg-white rounded-full shadow">
-          <HeartIcon className="w-5 h-5" />
-        </Button>
+        <FavouriteButton />
       </div>
     </div>
   );
-}
+};
 
 export default Product;
